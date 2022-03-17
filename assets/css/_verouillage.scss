@@ -1,5 +1,4 @@
 #verouillage{
-    // display: none;
     height: 100vh;
     color: white;
     background-size: cover;
@@ -23,6 +22,10 @@
         }
     }
 
+    .disable{
+        display: none;
+    }
+
     .infos{
         position: absolute;
         bottom: 0;
@@ -37,9 +40,67 @@
     }
 }
 
+#user{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .name{
+        font-size: 2.4rem;
+        margin: 30px 0;
+    }
+
+    .password{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        input{
+            width: 250px;
+            height: 30px;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            &:focus{
+                outline: none;
+            }
+        }
+        a{
+            color: white;
+            text-align: center;
+        }
+
+        .arrow{
+            position: absolute;
+            right: 15px;
+            top: 8px;
+            color: black;
+            &:hover{
+                background-color: blue;
+                color: white;
+            }
+
+            &:after{
+                content: '→';
+                
+                
+                &:hover{
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+// Javascript anim
+
 .lock{
     background-image: url(../img/background-bobby.png);
 }
 .unlock{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-bobby.png);
+}
+.active{
+    display: flex;
 }
