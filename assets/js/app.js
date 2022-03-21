@@ -9,6 +9,7 @@ const goodPassword = "bobby";
 
 verouillage.addEventListener("click", unlock);
 
+
 function unlock(){
     verouillage.classList.remove("lock");
     verouillage.classList.add("unlock");
@@ -23,9 +24,8 @@ passwordInput.addEventListener("keyup", (e) =>{
     }
     
 })
-function inputFocus() {
-    passwordInput.focus();
-}
+
+
 
 function passwordVerify(password){
     if(password == goodPassword){
@@ -37,10 +37,4 @@ function passwordVerify(password){
         passwordInput.value = '';
     }
 }
-
-
-
-
-
-// mot de passe
 

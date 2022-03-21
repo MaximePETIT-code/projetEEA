@@ -75,21 +75,32 @@
 
         .arrow{
             position: absolute;
-            right: 15px;
+            right: 5px;
+            border-radius: 15%;
             top: 4px;
             color: black;
             padding: 5px;
+            -webkit-transition: background-color 100ms linear;
+            -ms-transition: background-color 100ms linear;
+            transition: background-color 100ms linear;
+
             &:hover{
-                background-color: blue;
+                -webkit-transition: background-color 100ms linear;
+                -ms-transition: background-color 100ms linear;
+                transition: background-color 100ms linear;
+
+                background-color: #fc843f;
                 color: white;
             }
 
             &:after{
                 content: '→';
+                transition: 0.2s color;
                 
                 
                 &:hover{
-                    color: blue;
+                    color: #fc843f;
+                    transition: 0.2s color;
                 }
             }
         }

@@ -232,23 +232,32 @@ table {
 
 #user .password .arrow {
   position: absolute;
-  right: 15px;
+  right: 5px;
+  border-radius: 15%;
   top: 4px;
   color: black;
   padding: 5px;
+  -webkit-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
 }
 
 #user .password .arrow:hover {
-  background-color: blue;
+  -webkit-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+  background-color: #fc843f;
   color: white;
 }
 
 #user .password .arrow:after {
   content: '→';
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
 }
 
 #user .password .arrow:after:hover {
-  color: blue;
+  color: #fc843f;
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
 }
 
 .lock {
@@ -265,26 +274,61 @@ table {
 }
 
 #bureau {
+  position: relative;
   height: 100vh;
   background-image: url(../img/background-desktop.jpg);
   background-size: cover;
   background-position-y: 50%;
 }
 
-#bureau .icone {
-  padding: 30px;
+#bureau .app {
+  position: absolute;
 }
 
-#bureau .one a {
-  margin-right: 100px;
+#bureau .app .icon-desktop img {
+  width: 45px;
 }
 
-#bureau .two a {
-  margin-left: 300px;
+#bureau .app .name {
+  margin-top: 10px;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-#bureau .tree a {
-  margin: 100px 80px;
+#bureau .bin {
+  top: 20px;
+  left: 40px;
+}
+
+#bureau .bin .name {
+  position: absolute;
+  right: -6px;
+}
+
+#bureau .edge {
+  top: 140px;
+  left: 40px;
+}
+
+#bureau .explorer {
+  top: 260px;
+  left: 40px;
+}
+
+#bureau .messagerie {
+  top: 380px;
+  left: 40px;
+}
+
+#bureau .messagerie .name {
+  position: absolute;
+  right: -16px;
+}
+
+#bureau .galerie {
+  top: 500px;
+  left: 40px;
 }
 
 #bureau #navbar {
@@ -363,8 +407,6 @@ strong {
 }
 
 .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

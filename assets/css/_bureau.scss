@@ -1,27 +1,64 @@
 #bureau{
+    position: relative;
     height: 100vh;
     background-image: url(../img/background-desktop.jpg);
     background-size: cover;
     background-position-y: 50%;
-    .icone{
-        padding: 30px ;
-     
-    }
-    .one{
-        a{
-            margin-right: 100px;
+
+    .app{
+
+        position: absolute;
+        .icon-desktop{
+        
+            img{
+                width: 45px;
+            }
+        }
+        .name{
+            margin-top: 10px;
+            color: white;
+            font-size: 0.9rem;
+            text-align: center;
         }
     }
-    .two{
-        a{
-            margin-left: 300px;
+
+    .bin{
+        top: 20px;
+        left: 40px;
+
+        .name{
+            position: absolute;
+            right: -6px;
         }
     }
-    .tree{
-        a{
-            margin: 100px 80px;
+
+    .edge{
+        top: 140px;
+        left: 40px;
+    }
+
+    .explorer{
+        top: 260px;
+        left: 40px;
+    }
+
+    .messagerie{
+        top: 380px;
+        left: 40px;
+
+        .name{
+            position: absolute;
+            right:-16px;
         }
     }
+
+    .galerie{
+        top: 500px;
+        left: 40px;
+    }
+
+    
+    
     
     #navbar{
         height: 55px;
