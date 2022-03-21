@@ -4,12 +4,10 @@ const date = document.getElementById("date-info");
 const userInfo = document.getElementById("user");
 const passwordInput = document.getElementById("password");
 
-
-// mot de passe obfusquer 
 const goodPassword = "bobby";
 
 
-verouillage.addEventListener("click", unlock)
+verouillage.addEventListener("click", unlock);
 
 function unlock(){
     verouillage.classList.remove("lock");
