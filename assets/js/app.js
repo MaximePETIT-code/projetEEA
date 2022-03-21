@@ -1,4 +1,5 @@
 const verouillage = document.getElementById("verouillage");
+const bureau = document.getElementById("bureau");
 const date = document.getElementById("date-info");
 const userInfo = document.getElementById("user");
 const passwordInput = document.getElementById("password");
@@ -29,6 +30,7 @@ function passwordVerify(password){
     if(password == goodPassword){
         console.log("bon mot de passe");
         verouillage.classList.add("disable");
+        bureau.classList.add("active");
     }else{
         console.log("mauvais mot de passe grosse merde");
         passwordInput.value = '';

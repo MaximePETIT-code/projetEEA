@@ -131,6 +131,7 @@ table {
   background-size: cover;
   background-position-y: 50%;
   position: relative;
+  z-index: 2;
 }
 
 #verouillage .container {
@@ -259,12 +260,6 @@ table {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-bobby.png);
 }
 
-.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .disable {
   display: none;
 }
@@ -335,6 +330,7 @@ table {
 
 body {
   font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 strong {
@@ -343,5 +339,11 @@ strong {
 
 .icon {
   width: 20px;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,11 @@
 #verouillage{
+
     height: 100vh;
     color: white;
     background-size: cover;
     background-position-y: 50%;
     position: relative;
+    z-index: 2;
 
     .container{
         height: 60%;
@@ -101,9 +103,6 @@
 }
 .unlock{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-bobby.png);
-}
-.active{
-    display: flex;
 }
 
 .disable{

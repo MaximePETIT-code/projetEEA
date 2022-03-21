@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 strong{
@@ -14,4 +15,8 @@ strong{
 
 .icon{
     width: 20px;
+}
+
+.active{
+    display: flex;
 }
