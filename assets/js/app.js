@@ -2,7 +2,11 @@ const verouillage = document.getElementById("verouillage");
 const date = document.getElementById("date-info");
 const userInfo = document.getElementById("user");
 const passwordInput = document.getElementById("password");
-const goodPassword = 'bobby';
+
+
+// mot de passe obfusquer 
+const goodPassword = "bobby";
+
 
 verouillage.addEventListener("click", unlock)
 
@@ -24,6 +28,7 @@ passwordInput.addEventListener("keyup", (e) =>{
 function passwordVerify(password){
     if(password == goodPassword){
         console.log("bon mot de passe");
+        verouillage.classList.add("disable");
     }else{
         console.log("mauvais mot de passe grosse merde");
         passwordInput.value = '';

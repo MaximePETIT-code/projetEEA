@@ -265,14 +265,72 @@ table {
   display: flex;
 }
 
-#bureau {
+.disable {
   display: none;
+}
+
+#bureau {
+  height: 100vh;
+  background-image: url(../img/chatbobby.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+#bureau div img {
+  width: 40px;
+}
+
+#bureau .icone {
+  padding: 30px;
+}
+
+#bureau .one a {
+  margin-right: 100px;
+}
+
+#bureau .two a {
+  margin-left: 300px;
+}
+
+#bureau .tree a {
+  margin: 100px 80px;
+}
+
+#bureau nav {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #bureau nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 5px 30px;
+}
+
+#bureau nav ul li {
+  margin-right: 40px;
+}
+
+#bureau nav ul li a img {
+  width: 35px;
+}
+
+#bureau nav .date {
+  color: white;
+  text-align: right;
+  position: absolute;
+  right: 0px;
+  padding: 5px 30px;
+  font-size: 14px;
 }
 
 body {

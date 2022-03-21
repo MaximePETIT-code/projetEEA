@@ -1,10 +1,61 @@
-
 #bureau{
-    display: none;
-
-    nav{
-        ul{
-            display: flex;
+    height: 100vh;
+    background-image: url(../img/chatbobby.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    div{
+        img{
+            width: 40px;
+        } 
+    }
+    .icone{
+        padding: 30px ;
+     
+    }
+    .one{
+        a{
+            margin-right: 100px;
         }
     }
+    .two{
+        a{
+            margin-left: 300px;
+        }
+    }
+    .tree{
+        a{
+            margin: 100px 80px;
+        }
+    }
+    
+    nav{
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            padding: 5px 30px;
+            li{
+                margin-right: 40px;
+                a{
+                    img{
+                        width: 35px;
+                    }
+                }
+            }
+        }
+
+        .date{
+            color: white;
+            text-align: right;
+            position: absolute;
+            right: 0px;
+            padding: 5px 30px;
+            font-size: 14px;
+        }
+    }
+
 }
