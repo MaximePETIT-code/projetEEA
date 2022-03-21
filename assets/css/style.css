@@ -232,8 +232,9 @@ table {
 #user .password .arrow {
   position: absolute;
   right: 15px;
-  top: 8px;
+  top: 4px;
   color: black;
+  padding: 5px;
 }
 
 #user .password .arrow:hover {

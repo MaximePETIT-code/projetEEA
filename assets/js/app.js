@@ -25,7 +25,7 @@ function passwordVerify(password){
     if(password == goodPassword){
         console.log("bon mot de passe");
     }else{
-        console.log("mauvais mot de passe");
+        console.log("mauvais mot de passe grosse merde");
         passwordInput.value = '';
     }
 }
