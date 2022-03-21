@@ -23,6 +23,9 @@ passwordInput.addEventListener("keyup", (e) =>{
     }
     
 })
+function inputFocus() {
+    passwordInput.focus();
+}
 
 function passwordVerify(password){
     if(password == goodPassword){
