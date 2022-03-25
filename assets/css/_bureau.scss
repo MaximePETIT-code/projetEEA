@@ -40,6 +40,10 @@
     .explorer{
         top: 260px;
         left: 40px;
+        .name{
+            position: absolute;
+            left: -3px;
+        }
     }
 
     .messagerie{
@@ -64,6 +68,7 @@
         height: 55px;
         background-color: rgba(20, 20, 20, 0.8);
         position: absolute;
+        z-index: 3;
         bottom: 0;
         width: 100%;
         display: flex;

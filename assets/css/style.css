@@ -316,6 +316,11 @@ table {
   left: 40px;
 }
 
+#bureau .explorer .name {
+  position: absolute;
+  left: -3px;
+}
+
 #bureau .messagerie {
   top: 380px;
   left: 40px;
@@ -335,6 +340,7 @@ table {
   height: 55px;
   background-color: rgba(20, 20, 20, 0.8);
   position: absolute;
+  z-index: 3;
   bottom: 0;
   width: 100%;
   display: -webkit-box;
