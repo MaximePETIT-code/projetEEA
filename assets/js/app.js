@@ -7,6 +7,8 @@ const numericDate = document.querySelector('.numericDate');
 const heureActuelHTML = document.querySelectorAll('.heureActuel');
 const dateVerouillageHTML = document.getElementById('dateVerouillage');
 
+const profilContainer = document.querySelector('.profilContainer');
+
 const goodPassword = "bobby";
 
 console.log(dateVerouillageHTML);
@@ -40,11 +42,20 @@ function affichZero(nombre) {
 verouillage.addEventListener("click", unlock);
 
 
+let count = 0; // On créer un compteur pour établir l'événement onClick une seule fois
+
 function unlock(){
-    verouillage.classList.remove("lock");
-    verouillage.classList.add("unlock");
-    dateHtml.classList.add("disable");
-    userInfo.classList.remove("disable");
+    while(count == 0){
+        // verouillage.classList.remove("lock");
+        gsap.fromTo(verouillage, {opacity : 1, ease: "power2.out", translateY : "0"}, {opacity : 0, ease: "power2.out", translateY : "0px", duration: 0.5});
+        gsap.to(verouillage, {display: 'none', ease: "power2.out", translateY : "0", duration: 0.5});
+        // verouillage.classList.add("unlock");
+        // dateHtml.classList.add("disable");
+        // userInfo.classList.remove("disable");
+
+        count ++; // Count est incrémenté, on n'entre donc plus dans la boucle
+    }
+
 }
 
 passwordInput.addEventListener("keyup", (e) =>{
@@ -59,9 +70,11 @@ passwordInput.addEventListener("keyup", (e) =>{
 
 function passwordVerify(password){
     if(password == goodPassword){
-        console.log("bon mot de passe");
-        verouillage.classList.add("disable");
-        bureau.classList.add("active");
+        gsap.to(userInfo, {opacity : 0, ease: "power2.out", display: 'none', duration: 0.4});
+
+        // gsap.fromTo(bureau, {opacity : 0, ease: "power2.out", translateY : "100vh"}, {opacity : 1, ease: "power2.out", translateY : "0", duration: 1});
+        // verouillage.classList.add("disable");
+        // bureau.classList.add("active");
     }else{
         console.log("mauvais mot de passe grosse merde");
         passwordInput.value = '';
