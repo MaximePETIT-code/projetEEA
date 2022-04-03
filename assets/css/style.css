@@ -605,7 +605,6 @@ table {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  background-color: white;
   width: auto;
   right: 0px;
   z-index: 3;
@@ -614,16 +613,6 @@ table {
 .discussion .discussion-frero {
   display: none;
   height: 100vh;
-}
-
-.discussion .discussion-frero h1 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  background-color: white;
-  width: auto;
-  right: 0px;
-  z-index: 3;
 }
 
 .chatbar {
@@ -666,6 +655,81 @@ table {
 
 .no-scrool {
   overflow-y: hidden;
+}
+
+#securisation {
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  display: none;
+  opacity: 0;
+}
+
+.securisation-container {
+  background-color: rgba(0, 0, 0, 0.71);
+  color: white;
+  padding: 30px;
+  border-radius: 2px;
+}
+
+.securisation-container .cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.securisation-container .cross:hover {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  color: #f74627;
+}
+
+.securisation-container .title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.securisation-container .descr {
+  margin-bottom: 20px;
+}
+
+.securisation-container .securisation-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #f74627;
+  padding: 13px;
+}
+
+.securisation-container .code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.securisation-container .code input {
+  height: 30px;
+  padding-left: 10px;
+  margin-bottom: 20px;
 }
 
 *:focus {
@@ -903,6 +967,28 @@ table {
   width: 10%;
 }
 
+#edge {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  opacity: 0;
+  overflow-y: hidden;
+}
+
+#edge .navigateur {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#edge .navigateur iframe {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   position: relative;
@@ -946,7 +1032,7 @@ strong {
 }
 
 .border-app .right .ico {
-  width: 10%;
+  width: 20%;
   margin-right: 15px;
 }
 
@@ -975,5 +1061,78 @@ strong {
   color: #b42020;
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
+}
+
+.loading {
+  position: relative;
+}
+
+.load-bar {
+  margin-top: 50px;
+  background-color: #ff67007a;
+  width: 8px;
+  height: 10px;
+  left: 200px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation-name: Laoding;
+          animation-name: Laoding;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.load-bar:nth-of-type(2) {
+  left: 213px;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.load-bar:nth-of-type(3) {
+  left: 226px;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.load-bar:nth-of-type(4) {
+  left: 240px;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+@-webkit-keyframes Laoding {
+  0% {
+    width: 5px;
+    height: 10px;
+    background-color: #ff67007a;
+  }
+  100% {
+    height: 35px;
+    -webkit-transform: translatey(15px);
+            transform: translatey(15px);
+    background-color: #ff6700;
+  }
+}
+
+@keyframes Laoding {
+  0% {
+    width: 5px;
+    height: 10px;
+    background-color: #ff67007a;
+  }
+  100% {
+    height: 35px;
+    -webkit-transform: translatey(15px);
+            transform: translatey(15px);
+    background-color: #ff6700;
+  }
 }
 /*# sourceMappingURL=style.css.map */

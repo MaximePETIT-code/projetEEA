@@ -1,15 +1,45 @@
+const codeInput = document.getElementById("code");
+
 // Ouverture de la fenêtre
 
 $(".audio").on("click", function(){
-    gsap.to($("#audio"), {display: 'block', opacity: '1', ease: "power2.out", duration: 0.5});
+    gsap.to($("#securisation"), {display: 'flex', opacity: '1', ease: "power2.out", duration: 0.5});
 })  
 
 // Fermeture de la fenêtre
 
-$(".cross-audio").on("click", function(){
-    gsap.to($("#audio"), {display: 'none', opacity: '0', ease: "power2.out", duration: 0.5});
+$(".cross-securisation").on("click", function(){
+  gsap.to($("#securisation"), {display: 'none', opacity: '0', ease: "power2.out", duration: 0.5});
 
 })
+
+$(".cross-audio").on("click", function(){
+    gsap.to($("#audio"), {display: 'none', opacity: '0', ease: "power2.out", duration: 0.5});
+})
+
+
+// Déverouiller
+
+const goodCode = '1268';
+
+
+$('#code').on("keyup", (e) =>{
+    if (e.keyCode === 13) {
+      let code = codeInput.value;
+      codeVerify(code);
+  }
+})
+
+function codeVerify(code){
+  if(code == goodCode){
+    gsap.to($("#securisation"), {display: 'none', opacity: '0', ease: "power2.out", duration: 0.5});
+    gsap.to($("#audio"), {display: 'block', opacity: '1', ease: "power2.out", duration: 0.5});
+
+  }else{
+      console.log("mauvais mot de passe");
+      codeInput.value = '';
+  }
+}
 
 
 $(function () {

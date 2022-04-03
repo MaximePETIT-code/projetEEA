@@ -1,3 +1,64 @@
+// Securisation
+
+#securisation{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    display: none;
+    opacity: 0;
+}
+
+.securisation-container{
+    background-color: rgba(0, 0, 0, 0.71);
+
+    color: white;
+    padding: 30px;
+    border-radius: 2px;
+
+    .cross{
+        display: flex;
+        justify-content: flex-end;
+        transition: color 0.2s;
+        cursor: pointer;
+        &:hover{
+            transition: color 0.2s;
+            color: #f74627;
+        }
+    }
+
+    .title{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .descr{
+        margin-bottom: 20px;
+    }
+
+    .securisation-btn{
+        text-decoration: none;
+        color: white;
+        background-color: #f74627;
+        padding: 13px;
+    }
+
+    .code{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input{
+            height: 30px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
 *:focus {
     outline: none;
 }

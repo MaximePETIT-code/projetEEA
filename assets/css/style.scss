@@ -41,7 +41,7 @@ strong{
         font-weight: bold;
 
         .ico{
-            width: 10%;
+            width: 20%;
             margin-right: 15px;
             img{
                 max-width: 100%;
@@ -63,5 +63,61 @@ strong{
                 transition: 0.2s color;
             }
         }
+    }
+}
+
+
+
+// loading
+
+
+.loading{
+    position: relative;
+}
+
+.load-bar {
+    margin-top: 50px;
+    background-color: #ff67007a;
+    width: 8px;
+    height: 10px;
+    left: 200px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    animation-name: Laoding;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+}
+
+.load-bar:nth-of-type(2) {
+    left: 213px;
+    animation-delay: .2s
+}
+
+.load-bar:nth-of-type(3) {
+    left: 226px;
+    animation-delay: .4s
+}
+
+.load-bar:nth-of-type(4) {
+    left: 240px;
+    animation-delay: .6s
+}
+
+@keyframes Laoding {
+    0% {
+        width: 5px;
+        height: 10px;
+        background-color: #ff67007a;
+    }
+
+    100% {
+        height: 35px;
+        transform: translatey(15px);
+        background-color: #ff6700;
     }
 }

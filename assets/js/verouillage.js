@@ -74,7 +74,6 @@ function passwordVerify(password){
         gsap.to(userInfo, {opacity : 0, ease: "power2.out", display: 'none', duration: 1.5, translateY: "-100vw"});
 
     }else{
-        console.log("mauvais mot de passe grosse merde");
         passwordInput.value = '';
     }
 }
