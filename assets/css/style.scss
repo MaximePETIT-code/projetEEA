@@ -3,11 +3,15 @@
 @import "_intro.scss";
 @import "_verouillage.scss";
 @import "_bureau.scss";
+@import "_messagerie.scss";
+@import "_audio.scss";
+@import "_edge.scss";
 
 body{
     font-family: 'Roboto', sans-serif;
     position: relative;
-    overflow-y: hidden;
+    // overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 strong{
@@ -20,4 +24,44 @@ strong{
 
 .active{
     display: block;
+}
+
+.border-app{
+    height: 5vh;
+    color: white;
+    background-color: #262626ed;
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px white solid;
+    align-items: center;
+
+    .right{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+
+        .ico{
+            width: 10%;
+            margin-right: 15px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .left{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .fas.fa-times{
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: 0.2s color;
+            &:hover{
+                color: rgb(180, 32, 32);
+                transition: 0.2s color;
+            }
+        }
+    }
 }

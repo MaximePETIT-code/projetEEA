@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomastory</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <section id="intro">
+
+    
+    <!-- <section id="intro">
         <div class="container">
             <div class="profile">
                 <img src="assets/img/pere-profil.png" alt="Photo d'un père">
@@ -33,10 +36,10 @@
 
         </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="lock" id="verouillage"> <!-- Class lock -->
-        <div id="date-info" class="container"> <!-- not class disable-->
+    <section class="lock" id="verouillage">
+        <div id="date-info" class="container">
             <div class="heure">
                 <p class="heureActuel">11:11</p>
             </div>
@@ -90,7 +93,7 @@
 
         <div class="app messagerie">
             <div class="icon-desktop">
-                <a href=""> <img src="assets/img/icon/mail.png" alt="Icone Edge"></a>
+                <a href="#last-message-maxime"> <img src="assets/img/icon/feedback.png" alt="Icone Edge"></a>
             </div>
             <div class="name">
                 <p>Messagerie</p>
@@ -106,12 +109,12 @@
             </div>
         </div>
 
-        <div class="app explorer">
+        <div class="app audio">
             <div class="icon-desktop">
-                <a href=""> <img src="assets/img/icon/explorer.png" alt="Icone Edge"></a>
+                <a href="#audio"> <img src="assets/img/icon/music.png" alt="Icone Edge"></a>
             </div>
             <div class="name">
-                <p>Fichier<br>sécurisé</p>
+                <p>Fichier<br>audio</p>
             </div>
         </div>
         
@@ -127,7 +130,7 @@
                     <a href=""> <img src="assets/img/icon/explorer.png" alt="Icone explorateur de fichiers"></a>
                 </li>
                 <li>
-                    <a href=""> <img src="assets/img/icon/mail.png" alt="Icone messagerie"></a>
+                    <a href=""> <img src="assets/img/icon/feedback.png" alt="Icone messagerie"></a>
                 </li>
                 <li>
                     <a href=""> <img src="assets/img/icon/photos.png" alt="Icone galerie photos"></a>
@@ -146,7 +149,474 @@
             <nav>
     </section>
 
+
+    <section id="edge">
+        <iframe src="https://www.bing.com/?cc=fr"></iframe>
+    </section>
+    <section id="messagerie">
+        <div class="border-app">
+            <div class="right">
+                <div class="ico">
+                    <img src="assets/img/icon/feedback.png">
+                </div>
+                <div class="titre">
+                    Messagerie
+                </div>
+            </div>
+            <div class="left">
+                <div class="cross cross-messagerie">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="messagerie-container">
+
+            <div class="affichage dm">
+                <img src="assets/img/close-button.png" alt="Croix" class="croix">
+                <img src="assets/img/dm.jpg" alt="grande image" class="grandeimage">
+            </div>
+            <div class="affichage capture">
+                <img src="assets/img/close-button.png" alt="croix" class="croix">
+                <img src="assets/img/devoirs-maths.jpg" alt="grande image" class="grandeimage2">
+            </div>
+            <div class="conversations">
+                <h1 class="title">Conversations</h1>
+                
+                <a href="#last-message-maxime">
+                <div class="box-profil" id="maxime">
+                    <img src="assets/img/photo_maxime.png" class="photo-de-profil">
+                    <div class="text-container">
+                        <p class="nom">Maxime</p>
+                        <p class="dernier-message">dernier message le 00/00/00</p>
+                    </div>
+                </div>
+                </a>
+    
+                <a href="#last-message-alicia">
+                <div class="box-profil" id="alicia">
+                    <img src="assets/img/photo_alicia.png" class="photo-de-profil">
+                    <div class="text-container">
+                        <p class="nom">Alicia</p>
+                        <p class="dernier-message">dernier message le 00/00/00</p>
+                    </div>
+                </div>
+                </a>
+    
+                <div class="box-profil" id="frero">
+                    <img src="assets/img/photo_frero.png" class="photo-de-profil">
+                    <div class="text-container">
+                        <p class="nom">Fréro</p>
+                        <p class="dernier-message">dernier message le 00/00/00</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="discussion">
+                <div class="opacity80"></div>
+    
+                <div class="discussion-maxime" id="discussion-maxime">
+                    
+                    <div class="titre-conv">
+                        <h1 class="title">Maxime</h1>
+                    </div>
+                    
+    
+                    <div class="conv-container">
+                        <div class="message-right-container">
+                            <p class="message-right">Salut</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">T'es qui ?</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Thomas on est dans la même classe</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Et qu'est-ce qu'il y a ?</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Est-ce que tu joues à LoL ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Oui</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Ca te dis qu'on y joue là ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Y a un dm de maths à rendre demain, si tu m'envoies les réponses j'aurai le
+                                temps de jouer</p>
+                        </div>
+        
+                        <div class="message-right-container ">
+                            <img class="message-right box-image image01" src="assets/img/dm.jpg" alt="image-dm">
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">J'suis connecté mon pseudo c'est ChickenColossus</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Cool</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">J'ai pas reçu de demande</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Envoie les exos pour demain stp</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">J'ai pas encore fini</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Je te laisse finir et tu m'envoies puis on s'appelle pour jouer à LoL ;)</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Ok</p>
+                        </div>
+        
+                        <div class="message-right-container ">
+                            <img class="message-right box-image image02" id="image" src="assets/img/devoirs-maths.jpg" alt="image-dm">
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Évite de trainer avec moi quand je suis avec mes potes stp.</p>
+                        </div>
+                        
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Mais... Pourquoi tu dis ça ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">C’est pas contre toi mais tout mes potes te trouvent chelou.</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Si tu veux je peux essayer d’être moins bizarre ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Non mais laisse tomber c’est déjà mort, t’as déjà cette image.</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Si je continue à t’envoyer les DM je peux rester pote avec vous ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Ok je vais demander aux autres</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Bon, ils sont ok mais tu dois envoyer les réponses à tout le monde.</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Ok, mais du coup on reste pote ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">On est surtout des connaissances quoi</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Et tes potes ils jouent à LOL ou pas ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Euhh on a déjà notre team, on est déjà 5.</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Ok, si jamais vous avez une place pour moi appelle moi.</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Ok pas de soucis.</p>
+                        </div>
+        
+                        <!--2 mois plus tard-->
+                        <div class="message-right-container">
+                            <p class="message-right">Salut mec, tu vas bien ? Ça fait quelques jours que je reçois des messages
+                                anonymes et je me disais que tu savais peut-être qui ça pourrait être ? J’ai l’impression que
+                                c’est des gens du lycée.</p>
+                        </div>
+        
+        
+        
+                        <div class="l-container">
+                            <p class="message-left">Bah non je vois pas qui ça pourrait être. Y’a pas de détails qui pourrait me
+                                faire penser à quelqu’un.</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Bon bah tampis, n'hésite pas à me dire s’il y a quelque chose qui te vient.
+                            </p>
+                        </div>
+        
+                        <!--Quelques temps plus tard-->
+                        <div class="message-right-container">
+                            <p class="message-right">Salut mec, t’es au courant qu’il y a des rumeurs autour de moi ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left"> Laquelle ? Je t’avoue qu’il y en a plusieurs haha.</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Attend sérieux ? Comment ça plusieurs ??</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Bah par exemple comme quoi ta copine te trompe, que tes parents sont gay et que
+                                du coup toi aussi et tout ça</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Comment ça Alicia me trompe ? Elle est en train de me quitter mais elle m’a
+                                jamais dit qu’elle le faisait pour un autre ?!</p>
+                        </div>
+        
+        
+                        <div class="l-container">
+                            <p class="message-left">C’est que des rumeurs, pas besoin d’y faire attention</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Oui… Mais à cause de tout ça Alicia ne me voit pas comme un homme, qu'est
+                                ce que je peux faire pour arranger ça ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Tu pourrais faire un truc de ouf pour l’impressionner. Je connais un spot où des
+                                mecs font des sauts spectaculaires et ça impressionne beaucoup les meufs. Tu pourrais peut-être
+                                faire ça toi aussi ?</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Merci de tes conseils, t’es vraiment un frère. Mais du coup il est où ce
+                                pont ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left">Je peux t’y emmener si tu veux, je pourrai te filmer pour montrer ça à Alicia
+                                elle va kiffer ;)</p>
+                        </div>
+        
+                        <div class="message-right-container">
+                            <p class="message-right">Demain 22h ça te va ?</p>
+                        </div>
+        
+                        <div class="l-container">
+                            <p class="message-left" id="last-message-maxime">Parfait je serai devant chez toi.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="discussion-alicia" id="discussion-alicia">
+                    <h1 class="title">Alicia</h1>
+                    
+                    <p class="message-left">T’as pas quelque chose à me dire?</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Que je t’aime?</p>
+                    </div>
+    
+                    <p class="message-left">Nan. Écoute je te cache pas que ça fait déjà quelques semaines que j’ai des
+                        doutes sur toi.</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Comment ca ? tu me fait peur</p>
+                    </div>
+    
+                    <p class="message-left">Écoute je vais pas passer par quatres chemins. Y a des rumeurs qui confirment
+                        mes doutes sur le fait que tu aimes les mecs. J’aurais préféré que tu me le dises plutôt que de
+                        l’apprendre comme ça.</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Mais qu’est ce que tu racontes? comment ca t’as des doutes?</p>
+                    </div>
+    
+                    <p class="message-left">Je préfère qu’on s’arrête là. J’ai besoin d’un vrai mec comme Maxime.</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right"><img src="assets/img/icone-tel.png" class="tel" alt="icone-tel">appel
+                            manqué</p>
+                    </div>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Je comprend pas tu préfère croire en des rumeurs plutôt qu’en moi ?</p>
+                    </div>
+    
+                    <p class="message-left">Askip c’est génétique. Je peux comprendre que ce n’est pas de ta faute.
+                        Comprends moi, j’ai l’impression que durant toute notre relation j’ai été bernée.</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Mais arrête de les croire. A quel moment ça peut être génétique quand on
+                            est adopté? Ton argument ne tient pas la route. Si tu veux mettre un terme à la relation, ne
+                            cherche pas de mauvaises excuses.</p>
+                    </div>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Alicia tu peux pas mettre un terme à nous deux. On s'aime. En tout cas moi
+                            je t'aime énormément. Depuis toujours. Je sais pas qui t'as mis des conneries pareilles dans la
+                            tête mais je t’aime et tu le sais, je sais pas ce que je ferais sans toi :(</p>
+                    </div>
+    
+                    <p class="message-left">Je suis désolé mais c’est trop tard puis ce n’est plus comme avant.</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Je peux pas y croire</p>
+                    </div>
+    
+                    <!--un peu de temps après, suite a la discution avec maxime-->
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Alicia? Est ce que tu m’as déjà trompé?</p>
+                    </div>
+    
+                    <p class="message-left">Peut-être puis de toute façon ça ne te regarde plus on est plus ensemble !</p>
+    
+                    <p class="message-left">C'est quoi ton problème, arrête de me parler stp ou je te bloque !</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Soit, si tel est ton desire, sache que tu sera en partie responsable d’un
+                            incident.</p>
+                    </div>
+    
+                    <p class="message-left">QUOI ! mais comment ça, tu es taré !</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">J’ai pas dis que tu serais totalement responsable mais tu fais partie d’une
+                            longue liste de responsables !</p>
+                    </div>
+    
+                    <p class="message-left" id="last-message-alicia">Allez c’est bon ça en est trop je te bloque, salut…</p>
+                
+                </div>
+    
+                <div class="discussion-frero" id="discussion-frero">
+                    <h1 class="title">Fréro</h1>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">Mec j’suis devant les casiers de la piscine c’est quoi deja le code?</p>
+                    </div>
+    
+                    <p class="message-left">c’est 1268</p>
+    
+                    <div class="message-right-container">
+                        <p class="message-right">merci</p>
+                    </div>
+    
+                    <!--Plus tard-->
+    
+                    <div class="message-right-container" id="last-message">
+                        <p class="message-right">Mec t’es vraiment quelqu’un de simple, gentil. Je t’aime fort. Désolé de ne
+                            pas t’avoir parlé plus tôt de tout ca. A bientôt.</p>
+                    </div>
+                </div>
+    
+                <div class="chatbar">
+                    <div class="bulle">
+                        <p>Ecrivez un message</p>
+                        <img src="assets/img/send.png" alt="icone d'envoi">
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="audio">
+
+        <div class="border-app">
+            <div class="right">
+                <div class="ico">
+                    <img src="assets/img/icon/music.png">
+                </div>
+                <div class="titre">
+                    Fichier audio
+                </div>
+            </div>
+            <div class="left">
+                <div class="cross cross-audio">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="icone">
+            <img src="assets/img/icon/music-player.png">
+        </div>
+    
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track " class="active">
+                <div id="album-name"></div>
+    
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+    
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-previous">
+    
+                            <i class="fas fa-backward">
+    
+                            </i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+    
+                            <i class="fas fa-play">
+    
+                            </i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-next">
+    
+                            <i class="fas fa-forward"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/verouillage.js"></script>
+    <script src="assets/js/messagerie.js"></script>
+    <script src="assets/js/audio.js"></script>
 </body>
 </html>

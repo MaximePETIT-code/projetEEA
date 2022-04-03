@@ -1,0 +1,266 @@
+#messagerie{
+    overflow-y: visible;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    z-index: 4;
+    display: none;
+    opacity: 0;
+
+    .border-app{
+        position: fixed;
+        width: 100vw;
+        z-index: 4;
+
+        .left{
+            margin-right: 50px;
+        }
+    }
+}
+
+.opacity80{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 98vh;
+    opacity: 0.8;
+    background-color: black;
+    display: none;
+
+}
+
+.affichage{
+    img{
+        width: 500px;
+        height: auto;
+    }
+    
+}
+.affichage{
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    z-index: 3; 
+    display: none;
+    
+    .croix{
+    position: absolute;
+    margin: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+}
+}
+
+
+
+.conversations{
+    padding-top: 100px;
+    background-color: #eeeeee;
+    display: inline-block;
+    width: 40vw;
+    height: 100vw;
+    padding-left: 50px;
+    position: fixed;
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .box-profil{
+        display: flex;
+        margin-bottom: 50px;
+        cursor: pointer;
+        p{
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        .text-container{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-left: 15px;
+        }
+
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    
+}
+
+    .discussion{
+        margin-right: 15px;
+        padding-top: 100px;
+        background-color: white;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        display: inline-block;
+        width: 60vw;
+        // height: 98vh;
+        position:absolute;
+        padding-left: 20px;
+        right: 0;
+
+        .titre-conv{
+            position: fixed;
+            width: 100vw;
+            background-color: #eeeeee;
+            left: 37.7vw;
+            top: 0;
+            z-index: 3;
+            padding-top: 20px;
+
+        }
+
+        h1{
+            margin-bottom: 30px;
+            margin-top: 100px;
+        }
+
+        .conv-container{
+            margin-top: 100px;
+        }
+
+        .box-image{
+            cursor: pointer;
+        }      
+
+        .l-container{
+            display: flex;
+
+            .message-left{
+                border-radius: 20px;
+                max-width: 250px;
+                min-width: 10px;
+                background-color: #3938854D;
+                justify-content: start;
+                margin: 10px 0;
+                padding: 14px;
+            }
+        }
+
+        .message-right-container{
+            display: flex;
+            justify-content: flex-end;
+            .message-right{
+                position: relative;
+                color: white;
+                border-radius: 20px;
+                max-width: 250px;
+                min-width: 10px;
+                background-color: #393885;
+                justify-content: start;
+                right: 20px;
+                margin: 10px 0;
+                padding: 14px;
+            }
+
+            img{
+            width: 150px;
+                height: auto;
+            }
+
+            .tel{
+                width: 20px;
+                height: auto;
+                margin-right: 5px;
+            }
+        }
+        .discussion-maxime{
+            
+            h1{
+                position: sticky;
+                top: 0px;
+                width: auto;
+                right: 0px;
+                z-index: 3;
+                
+            }
+        }
+        .discussion-alicia{
+            display: none;
+
+            h1{
+                position: sticky;
+                top: 0px;
+                background-color: white;
+                width: auto;
+                right: 0px;
+                z-index: 3;
+            }
+        }
+
+        .discussion-frero{
+            display: none;
+            height: 100vh;
+            h1{
+                position: sticky;
+                top: 0px;
+                background-color: white;
+                width: auto;
+                right: 0px;
+                z-index: 3;
+            }
+        }
+        
+    
+    }
+.chatbar{
+            position: absolute;
+            position: sticky;
+            bottom: 0px;
+            right: 0;
+            bottom: 0;
+            .bulle{
+                background-color: rgb(230, 230, 230);
+                border-radius: 100px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                margin: 50px 20px 30px 0;
+
+                p{
+                    margin: 0 20px;
+                    color: rgb(92, 92, 92);
+                }
+
+                img{
+
+                    width: 20px;
+                    position: absolute;
+                    right: 0;
+                    margin: 0 40px;
+                }
+            }
+           
+            
+            
+        }
+    
+
+
+.title{
+    font-size: 30px;
+    
+ }
+ 
+ .photo-de-profil{
+        // position: relative;
+ }
+
+
+
+ .no-scrool{
+    overflow-y: hidden;
+ }
+

@@ -7,8 +7,7 @@
     background-image: url(../img/background-desktop.jpg);
     background-size: cover;
     background-position-y: 50%;
-    // opacity: 0;
-    // transform: translateY(-100vh);
+    overflow-y: hidden;
 
     .app{
 
@@ -42,7 +41,7 @@
         left: 40px;
     }
 
-    .explorer{
+    .audio{
         top: 260px;
         left: 40px;
         .name{

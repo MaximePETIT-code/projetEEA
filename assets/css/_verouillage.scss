@@ -7,6 +7,7 @@
     position: relative;
     z-index: 2;
     background-image: url(../img/background-bobby.png);
+    overflow-y: hidden;
 
     .container{
         height: 60%;

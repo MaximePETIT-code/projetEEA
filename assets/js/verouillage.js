@@ -40,6 +40,7 @@ function affichZero(nombre) {
     };
 
 verouillage.addEventListener("click", unlock);
+$(document).keydown(unlock);
 
 
 let count = 0; // On créer un compteur pour établir l'événement onClick une seule fois
@@ -70,11 +71,8 @@ passwordInput.addEventListener("keyup", (e) =>{
 
 function passwordVerify(password){
     if(password == goodPassword){
-        gsap.to(userInfo, {opacity : 0, ease: "power2.out", display: 'none', duration: 0.4});
+        gsap.to(userInfo, {opacity : 0, ease: "power2.out", display: 'none', duration: 1.5, translateY: "-100vw"});
 
-        // gsap.fromTo(bureau, {opacity : 0, ease: "power2.out", translateY : "100vh"}, {opacity : 1, ease: "power2.out", translateY : "0", duration: 1});
-        // verouillage.classList.add("disable");
-        // bureau.classList.add("active");
     }else{
         console.log("mauvais mot de passe grosse merde");
         passwordInput.value = '';
