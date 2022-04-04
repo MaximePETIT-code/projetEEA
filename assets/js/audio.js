@@ -31,6 +31,7 @@ $('#code').on("keyup", (e) =>{
 })
 
 $('.securisation-btn').on("click", function(){
+  let code = codeInput.value;
   codeVerify(code);
 })
 
