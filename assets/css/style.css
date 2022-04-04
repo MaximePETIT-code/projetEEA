@@ -617,11 +617,6 @@ table {
   z-index: 3;
 }
 
-.discussion .discussion-frero {
-  display: none;
-  height: 100vh;
-}
-
 .chatbar {
   position: absolute;
   position: -webkit-sticky;
