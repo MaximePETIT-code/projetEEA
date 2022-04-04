@@ -22,7 +22,7 @@ $(".cross-audio").on("click", function(){
 
 // Déverouiller
 
-const goodCode = '1268';
+const goodCode = '8012021';
 
 
 $('#code').on("keyup", (e) =>{

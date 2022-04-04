@@ -24,26 +24,6 @@ $(".cross-messagerie").on("click", function(){
 })
 
 
-//affichage et rétrécissement des images au clics dans les messages
-$(".image01" ).on( "click", function() {
-    $(".dm").css("display","block");
-    $(".discussion").addClass("no-scrool");
-    $(".opacity80").css("display","block");
-})
-
-$(".image02" ).on( "click", function() {
-    $(".capture").css("display","block");
-    $(".discussion").addClass("no-scrool");
-    $(".opacity80").css("display","block");
-})
-
-$(".croix" ).on( "click", function() {
-    $(".affichage").css("display","none");
-    $(".discussion").removeClass("no-scrool");
-    $(".opacity80").css("display","none");
-
-})
-
 //changement de conversations au clic
 $("#maxime").on("click", function(){
     $("#discussion-maxime").css("display","block");
