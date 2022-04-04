@@ -86,7 +86,8 @@ $(function () {
     trackNames = ["Skylike - Dawn"],
     albumArtworks = ["_1"],
     trackUrl = [
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3",
+      // "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3",
+      "../assets/music.mp3/"
     ],
     currIndex = -1;
 

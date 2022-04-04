@@ -331,8 +331,8 @@ table {
 }
 
 #bureau .galerie {
-  top: 500px;
-  left: 40px;
+  top: 20px;
+  left: 158px;
 }
 
 #bureau #navbar {
@@ -406,6 +406,13 @@ table {
   z-index: 4;
   display: none;
   opacity: 0;
+  line-height: 1.3;
+}
+
+#messagerie .day {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
 }
 
 #messagerie .border-app {
