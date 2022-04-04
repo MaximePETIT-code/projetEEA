@@ -30,10 +30,18 @@ $('#code').on("keyup", (e) =>{
   }
 })
 
+$('.securisation-btn').on("click", function(){
+  codeVerify(code);
+})
+
+
+
 function codeVerify(code){
   if(code == goodCode){
     gsap.to($("#securisation"), {display: 'none', opacity: '0', ease: "power2.out", duration: 0.5});
     gsap.to($("#audio"), {display: 'block', opacity: '1', ease: "power2.out", duration: 0.5});
+
+
 
   }else{
       console.log("mauvais mot de passe");
@@ -256,11 +264,6 @@ $(function () {
     $('.icone').on("click", playPause);
     $('#play-pause-button').on("click", playPause);
 
-    $(document).keydown(function (e) {
-      if (e.keyCode == 32) {
-        playPause();
-      }
-    });
 
     sArea.mousemove(function (event) {
       showHover(event);
