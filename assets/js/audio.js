@@ -4,6 +4,8 @@ const codeInput = document.getElementById("code");
 
 $(".audio").on("click", function(){
     gsap.to($("#securisation"), {display: 'flex', opacity: '1', ease: "power2.out", duration: 0.5});
+
+    codeInput.focus();
 })  
 
 // Fermeture de la fenêtre

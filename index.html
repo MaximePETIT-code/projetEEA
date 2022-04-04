@@ -11,8 +11,8 @@
 <body>
 
     
-    <!-- <section id="intro">
-        <div class="container">
+    <section id="intro">
+        <div id="intro-container" class="container">
             <div class="profile">
                 <img src="assets/img/pere-profil.png" alt="Photo d'un père">
             </div>
@@ -30,13 +30,31 @@
                     Est ce que tu pourrais <strong>déverouiller son PC</strong> ? Il y a toute sa vie dedans. Fait moi signe dès que tu en sait plus.
                 </p>
             
-            <div class="button">
+            <div id="on-button" class="button">
                 <a id="on-button">Allumer l'ordinateur de Thomas</a>
             </div>
 
         </div>
         </div>
-    </section> -->
+
+        <section id="loader">
+            <div class="loader-windows">
+                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" width="60px" height="60px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;"
+                    xml:space="preserve">
+                    <path fill="#000"
+                        d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25"
+                            dur="0.6s" repeatCount="indefinite" />
+                    </path>
+                </svg>
+            </div>
+    
+            <div class="message">
+                <p>Démarrage en cours</p>
+            </div>
+        </section>
+    </section>
 
     <section class="lock" id="verouillage">
         <div id="date-info" class="container">

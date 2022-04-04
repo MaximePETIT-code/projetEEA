@@ -23,6 +23,19 @@ dateVerouillageHTML.innerHTML = dateActuelVerouillage;
 
 numericDate.innerHTML = dateActuel;
 
+
+// Ouverture de l'ordinateur (intro)
+
+$('#on-button').on("click", function(){
+    gsap.to($("#intro-container"), {display: 'none', opacity: '0', ease: "power2.out", duration: 0.5});
+    gsap.to($("#loader"), {display: 'flex', opacity: '1', ease: "power2.out", duration: 3});
+
+    setTimeout(function(){
+        gsap.to($("#intro"), {display: 'none', opacity: '0', ease: "power2.out", duration: 0.5});
+    }, 3000);
+})
+
+
 function affichZero(nombre) {
 
     return nombre < 10 ? '0' + nombre : nombre;
@@ -46,13 +59,10 @@ $(document).keydown(unlock);
 let count = 0; // On créer un compteur pour établir l'événement onClick une seule fois
 
 function unlock(){
+    passwordInput.focus();
     while(count == 0){
-        // verouillage.classList.remove("lock");
         gsap.fromTo(verouillage, {opacity : 1, ease: "power2.out", translateY : "0"}, {opacity : 0, ease: "power2.out", translateY : "0px", duration: 0.5});
         gsap.to(verouillage, {display: 'none', ease: "power2.out", translateY : "0", duration: 0.5});
-        // verouillage.classList.add("unlock");
-        // dateHtml.classList.add("disable");
-        // userInfo.classList.remove("disable");
 
         count ++; // Count est incrémenté, on n'entre donc plus dans la boucle
     }

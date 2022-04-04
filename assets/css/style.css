@@ -51,11 +51,13 @@ table {
 }
 
 #intro {
-  display: none;
+  position: absolute;
+  z-index: 5;
   height: 100vh;
+  width: 100vw;
   background-color: #1B1B1B;
   color: white;
-  overflow-y: none;
+  overflow-y: hidden;
 }
 
 #intro .container {
@@ -88,6 +90,7 @@ table {
 }
 
 #intro .button {
+  width: auto;
   margin-top: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +98,10 @@ table {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+#intro .button:hover {
+  background-color: transparent;
 }
 
 #intro .button a {
@@ -120,6 +127,31 @@ table {
   position: absolute;
   top: -10px;
   right: -60px;
+}
+
+#loader {
+  display: none;
+  opacity: 0;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#loader .message {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+#loader .loader-windows svg path {
+  fill: #fc843f;
 }
 
 #verouillage {
