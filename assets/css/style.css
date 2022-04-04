@@ -300,6 +300,11 @@ table {
   transition: 0.2s color;
 }
 
+#user .indice {
+  margin-top: 10px;
+  display: none;
+}
+
 #bureau {
   position: absolute;
   top: 0;

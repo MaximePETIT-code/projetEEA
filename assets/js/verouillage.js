@@ -88,3 +88,8 @@ function passwordVerify(password){
     }
 }
 
+
+$('.indice-button').on('click', function(){
+    $('.indice').fadeIn();
+})
+
